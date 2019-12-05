@@ -1,0 +1,95 @@
+*{
+    font-size: 16px;
+}
+:root{
+    --color-azul1: #98dbc6 ;
+    --color-azul2: #5bc8ac;
+    --color-claro1: #e6d72a;
+    --color-claro2: #f18d9e;
+    --color-oscuro: #00293c;
+}
+#body{
+ 
+    justify-content: center;
+    margin: auto;
+    width:70%;
+    padding: 40px;
+    text-align:center;
+    background: var(--color-oscuro);
+    border: 1px solid var(--color-azul1);
+    font-family: 'Roboto', sans-serif;
+}
+p, h2{
+    color: white;
+}
+.box{
+    border: 1px solid var(--color-azul1);
+    margin:3px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+}
+h1{
+    background:var(--color-claro1) ;
+    padding: 20px;
+    border-radius: 5px;
+    width:70%;
+    margin:auto;
+}
+/*/////////// REGISTRO Y ACCESO////////////*/
+#survey-form{
+    background: var(--color-claro2);
+    color:white;
+}
+#registroPopUp{
+    display: flex;
+    text-align: left;
+    padding:2px 10px 5px 30px;
+}
+.etiquetas label{
+    display:flex;
+    flex-direction: column;
+    margin-top: 5px;
+   
+}
+
+/*//////////////GENERAL/////////////*/
+#generalf{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: var(--color-claro1);
+    padding:2px 10px 5px 30px;
+}
+
+#plantas{
+    background: var(--color-azul2);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding:2px 10px 5px 30px;
+}
+#plantasT1{
+    margin-right: 10px;
+}
+#plantasGrupo{
+    display: flex;
+}
+#materiales{
+    background: var(--color-claro1);  
+    padding:2px 10px 5px 30px;     
+}
+#materialesF, #implementosF{
+   
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding:2px 10px 5px 30px;
+}
+
+
+#implementos{
+    background:var(--color-azul2);
+    padding:2px 10px 5px 30px; 
+}

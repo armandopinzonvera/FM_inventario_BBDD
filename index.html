@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos1.css">
+</head>
+<body id="body">
+    <h1 id="title">FORMATO INVENTARIO Y REGISTRO</h1>
+    <h2>Vivero flor Morada</h2>
+    <p id="description">Permite tener una relacion de las plantas, materiales e implementos que se tienen, incluyendo cantidad y costos, ademas de las actividades realizadas</p>
+    <main>
+
+        <form action="#" method="post" name="Registro" id="survey-form" class="box">
+            <h3>Registro</h3>
+            <div id="registroPopUp">
+            
+             <div class="etiquetas">
+
+            <label for="name" id="name-label">Nombre:</label>            
+            <label for="email" id="email-label"> Correo: </label>
+            <label for="pasword"> Contraseña:</label> 
+            <label for="verificar">Verificar</label>
+                    
+             </div>
+
+             <div class="textos">
+
+                <input type="text" name="nombre" placeholder="Nombre" id="name" required>
+                <input type="email" name="correo" id="email" placeholder="ejemplo@dominio.com" required>    
+                <input type="text" name="contraseña" id="contraseña" required>
+                <input type="text" name="verificar" id="verificar" required>
+                <input type="submit" id="submit" value="submit" required>
+
+       
+
+
+             </div>
+            </div>
+        </form >
+    <!--/////////////////////////////////////    GENERAL   ////////////////////////////////////////////////////////-->
+        <div class="box" id="general">  
+            <form action="#" method="post" name="general" id="generalf">
+                  
+                    <h3>Movimiento</h3>
+                    <div>
+                    <label for="entrada">Ingreso</label>
+                    <input type="radio" name="movimiento" value="entrada" id="entrada"> 
+                    <label for="salida">Salida</label>
+                    <input type="radio" name="movimiento" value="salida" id="salida"> 
+                    </div>
+                    <div>
+                    <label for="fecha">Fecha:</label>   
+                    <input type="date" name="fecha" id="fecha">
+                    </div>
+                    <div>
+                    <label for="segmento">segmento</label>
+                        <select name="segmento" id="segmento">
+                            <option value="plantas">Plantas</option>
+                            <option value="implemento">Implemento</option>
+                            <option value="material">Material</option>
+                        </select>
+                        <input type="submit" id="submit2" value="submit2">
+                    </div>
+             </form>
+        </div>
+
+
+<!--////////////////////////////////    PLANTAS   /////////////////////////////////////////////////-->
+        <div class="box" id="plantas">
+            <form action="" method="post" >
+            <h3>Plantas</h3>
+            <div id="plantasGrupo">
+            <div id="plantasT1">
+            <label for="grupoVegetal">Grupo:</label>
+            <label for="taxonomia">Taxonomia:</label>
+            </div>
+            <div id="taxonomia"> 
+            <select name="grupoVegetal" id="grupoVegetal">
+                <option value="orquideas">Orquideas</option>
+                <option value="suculentas">cactus y suculentas</option>
+                <option value="follaje">Follaje</option>
+                <option value="flor">Flor</option>
+                <option value="bonsai">Bonsai</option>
+            </select>
+            </div>
+            <div>            
+                <input type="text" name="familia" placeholder="Familia">
+                <input type="text" name="nombre-cientifico" placeholder="Nombre cientifico">
+                <input type="text" name="nombre-comun" placeholder="Nombre comun">
+                <input type="text" name="cantidadPlantas" placeholder="cantidad">
+                <input type="text" name="id" placeholder="ID">
+            </div>
+            </div>
+
+            <label for="procedencia">Procedencia</label>
+            <input type="radio" name="procedencia" value="silvestre"> Silvestre 
+            <input type="radio" name="procedencia" value="comercio">comercio 
+            <input type="text" name="localidad" placeholder="departamento / municipio">
+            
+
+            <input type="text" name="vivero" placeholder="vivero /municipio">
+            <input type="text" name="costoPlanta" placeholder="costo" >
+            </form>
+
+        </div>
+<!--/////////////////////////////////////   MATERIALES  /////////////////////////////////////-->
+        <div class="box" id="materiales"> 
+                <h3>Materiales</h3>
+            <form action="" method="post" id="materialesF">
+            
+
+            <div class="etiquetas">
+            <label for="tipoMaterial">Tipo de material: </label>
+            <label for="especificarMaterial">Especificar: </label>
+            <label for="cantidadMateriales">Cantidad: </label>
+            <label for="provedor">Proveedor: </label>
+            <label for="costoMaterial">Costo:</label>
+            </div>
+
+            <div class="textos">
+           
+               <select name="tipoMaterial" id="tipoMaterial">
+                <option value="agroquimico">Agroquimico</option>
+                <option value="sustrato">sustrato</option>
+                <option value="semillas">semillas</option>
+                <option value="decoracion">decoracion</option>              
+                </select>            
+                <input type="text" name="especificarMaterial" id="especificarMaterial">           
+                <input type="text" name="cantidadMateriales" placeholder="Cantidad" id="cantidadMateriales">            
+                <input type="text" name="proveedor" placeholder="Proveedor" id="provedor">           
+                <input type="text" name="costoMaterial" id="costoMaterial">
+                </div>
+            </div>
+            </form>            
+
+ <!--//////////////////////////////  IMPLEMENTOS   /////////////////////////////////    -->
+    <div class="box" id="implementos">
+            <h3>Implementos</h3>
+        <form action="" method="post" id="implementosF">
+        
+        <div class="etiquetas">
+        <label for="tipoImplementos">Tipo de implemento:</label>
+        <label for="especificarImplemento">Especificar:</label>
+        <label for="cantidadImplemento">Cantidad:</label>
+        <label for="provedorI">Proveedor:</label>
+        <label for="costoI">Costo:</label>
+        </div>
+
+        <div class="textos">
+
+        <select name="tipoImplemento" id="tipoImplemento">
+          <option value="equipo">Equipo</option>
+          <option value="epp">EPP</option>
+          <option value="macetas">Macetas</option>
+          <option value="mobiliario">Mobiliario</option>          
+        </select>       
+
+        <input type="text" name="especificarImplemento" id="especificarImplemento" placeholder="Especificar">        
+        <input type="text" name="cantidadImplemento" placeholder="Cantidad" d="cantidadImplemento">        
+        <input type="text" name="proveedorI" placeholder="ProveedorI" id="provedorI">        
+        <input type="text" name="costoI" id="costoI">
+        </div>  
+
+        </form>
+        
+    </div>
+
+    </form>
+
+    </main>
+</body>
+</html>
